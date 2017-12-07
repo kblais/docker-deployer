@@ -16,4 +16,8 @@ ENV PATH=/root/.composer/vendor/bin:$PATH
 
 RUN composer global require deployer/deployer:6.0.3
 
+RUN mkdir -p /var/www
+
+WORKDIR /var/www
+
 CMD dep
