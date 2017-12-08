@@ -5,7 +5,8 @@ ENV COMPOSER_ALLOW_SUPERUSER 1
 RUN apt-get update && apt-get install -y zlib1g-dev \
 	unzip \
 	rsync \
-	ssh
+	ssh \
+	git
 
 RUN docker-php-ext-install zip
 
