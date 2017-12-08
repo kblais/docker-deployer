@@ -1,6 +1,7 @@
 FROM php:latest
 
 ENV COMPOSER_ALLOW_SUPERUSER 1
+ENV COMPOSER_VENDOR_DIR "/root/.composer/vendor"
 
 RUN apt-get update && apt-get install -y zlib1g-dev \
 	unzip \
