@@ -17,7 +17,7 @@ RUN rm composer-setup.php
 
 ENV PATH=/root/.composer/vendor/bin:$PATH
 
-RUN composer global require deployer/deployer:6.0.3
+RUN composer global require deployer/deployer:6.2.0
 
 RUN mkdir -p /var/www
 
